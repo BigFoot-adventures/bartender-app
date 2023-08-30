@@ -1,0 +1,17 @@
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title style="display: inline">{{cocktail?.name}}</mat-card-title>
+        <mat-card-title *ngIf="!ordersPage" style="display: inline; float: right">$6</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p> {{cocktail?.ingredients}} </p>
+        <p *ngIf="ordersPage">
+            Instructions: <br>
+            {{cocktail?.instructions}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="order()" *ngIf="!ordersPage">Order</button>
+        <button mat-raised-button color="warn" (click)="complete()" *ngIf="ordersPage">Complete Order</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,9 @@
+<div class="center">
+    <div style="max-width: 80%; ">
+        <app-cocktail [cocktail]="item" *ngFor="let item of menu"></app-cocktail>
+    </div>
+</div>
+
+<button mat-mini-fab color="primary" routerLink="/home">
+    <mat-icon>home</mat-icon>
+</button>
