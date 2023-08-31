@@ -1,27 +1,33 @@
 # BartenderApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D%2012-brightgreen.svg)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-%3E%3D%204.0-blue.svg)](https://www.typescriptlang.org/)
+[![Angular](https://img.shields.io/badge/Angular-%3E%3D%2011.0-red.svg)](https://angular.io/)
+[![Angular Material](https://img.shields.io/badge/Angular%20Material-%3E%3D%2011.0-orange.svg)](https://material.angular.io/)
 
-## Development server
+A simple web application that allows users to view a list of cocktails and their ingredients and add them to an order queue. They can navigate back to home and view the queue of cocktails they have ordered. The user can also remove cocktails from the queue. In order to view the cocktails, the corresponding API must be running. The API can be found [here](https://github.com/BigFoot-adventures/bartender-app-api).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Install and Run
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js: Download and install Node.js from [nodejs.org](https://nodejs.org/).
 
-## Build
+- Angular CLI: If you don't have Angular CLI installed, run `npm install -g @angular/cli` in your terminal.
+- TypeScript: If you don't have TypeScript installed, run `npm install -g typescript` in your terminal.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installation
 
-## Running unit tests
+1.  Clone the repo: Run `git clone https://BigFoot-adventures/bartender-app.git` in your terminal.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2.  Navigate to the project directory: Run `cd bartender-app`
 
-## Running end-to-end tests
+3.  Install dependencies: Run `npm install` in your terminal to install all dependencies.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Run the app
 
-## Further help
+1. Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. Run `ng serve` for a dev server. 
+
+3. Navigate to http://localhost:4200.
