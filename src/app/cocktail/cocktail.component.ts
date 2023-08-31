@@ -11,6 +11,7 @@ import { Service } from '../services/svc.service';
 })
 export class CocktailComponent {
   @Input() cocktail: Cocktail | undefined;
+  @Input() topOrder = false;
   @Output() orderPlaced = new EventEmitter<boolean>();
 
   ordersPage = false;

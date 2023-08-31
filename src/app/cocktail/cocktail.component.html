@@ -12,6 +12,6 @@
     </mat-card-content>
     <mat-card-actions>
         <button mat-raised-button color="primary" (click)="order()" *ngIf="!ordersPage">Order</button>
-        <button mat-raised-button color="warn" (click)="complete()" *ngIf="ordersPage">Complete Order</button>
+        <button mat-raised-button color="warn" (click)="complete()" *ngIf="ordersPage && topOrder">Complete Order</button>
     </mat-card-actions>
 </mat-card>

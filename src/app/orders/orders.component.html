@@ -1,6 +1,6 @@
 <div class="center">
     <div style="width: 60%" *ngIf="orders.length > 0">
-        <app-cocktail (orderPlaced)="ngOnInit()" [cocktail]="item" *ngFor="let item of orders"></app-cocktail>
+        <app-cocktail (orderPlaced)="ngOnInit()" [cocktail]="item" [topOrder]="i == 0" *ngFor="let item of orders; let i = index"></app-cocktail>
     </div>
     <div *ngIf="orders.length == 0">
         <h1 style="color: #eee; font-size: 2.25rem">No orders yet!</h1>
